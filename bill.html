@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <script>
+        function bill(units){
+            var cost, cpu=150, tax, total=0;
+            cost = cpu* units;
+            console.log(cost);
+            tax = ((20 * cost)/100);
+            console.log(tax);
+
+            return total = (parseInt(cost) + parseInt(tax));
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var units = prompt("Enter your units : ");
+        var totalcost=bill(units);
+        document.write("Your Bill is : " + totalcost);
+    </script>
+</body>
+</html>
